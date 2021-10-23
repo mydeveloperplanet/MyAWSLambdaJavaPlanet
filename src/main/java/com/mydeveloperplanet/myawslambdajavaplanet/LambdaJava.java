@@ -14,7 +14,7 @@ public class LambdaJava implements RequestHandler<Map<String, String>, String> {
     @Override
     public String handleRequest(Map<String, String> event, Context context) {
         LambdaLogger logger = context.getLogger();
-        String response = "Version 2";
+        String response = "Version 3";
 
         // log execution details
         logger.log("ENVIRONMENT VARIABLES: " + GSON.toJson(System.getenv()) + System.lineSeparator());
